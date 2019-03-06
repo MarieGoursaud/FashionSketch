@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @sketch.image %>
+</p>
+
+<p>
+  <strong>kind:</strong>
+  <%= @sketch.kind %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @sketch.date %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sketch.name %>
+</p>
+
+<%= link_to 'Edit', edit_sketch_path(@sketch) %> |
+<%= link_to 'Back', sketches_path %>
