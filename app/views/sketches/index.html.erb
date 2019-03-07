@@ -3,8 +3,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <h1>Sketches</h1>
-
 <table>
+  <table class="table">
+
   <thead>
     <tr>
       <th>Image</th>
@@ -18,7 +19,8 @@
   <tbody>
     <% @sketches.each do |sketch| %>
       <tr>
-        <td><%= sketch.image %></td>
+       
+        <td><%= image_tag sketch.image, class: 'img-fluid'%></td>
         <td><%= sketch.kind %></td>
         <td><%= sketch.date %></td>
         <td><%= sketch.name %></td>

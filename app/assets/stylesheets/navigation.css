@@ -1,0 +1,9 @@
+<link rel="" type="text/html" href="_navigation.html.erb" /> 
+
+div#avatar {
+  background-image: url(avatar-p.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 103px;
+  padding: 0;
+} 
